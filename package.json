@@ -1,0 +1,24 @@
+{
+  "name": "udi-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "trash dist",
+    "start": "webpack-dev-server -d --progress --hot --open --content-base ./dist",
+    "build": "npm run clean && webpack -p --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "html-webpack-plugin": "^2.28.0",
+    "trash-cli": "^1.4.0",
+    "webpack": "^2.6.0",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
